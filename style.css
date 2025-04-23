@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(102, 102, 102);
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+}
+div.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 300px auto 300px;
+}
+h2, h3, h4 {
+  color: rgb(84, 84, 84);
+  padding: 0 0 5px 0;
+  margin: 0 0 15px 0;
+}
+h2, h3 { border-bottom: rgb(223, 223, 223) 1px dashed; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.1em; }
+a { color: rgb(0, 119, 221); }
+p { padding-bottom: 20px; }
+ul {
+  list-style: square;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+ul li { padding-bottom: 20px; }
+ul ul {
+  padding-bottom: 0;
+  padding-top: 20px;
+}
+ul ul li { padding-bottom: 5px; }
+header {
+  background-color: rgb(0, 71, 120);
+  height: 140px;
+  padding: 0 30px;
+  min-width: 900px;
+}
+header h1 {
+  font-size: 2.2em;
+  color: rgb(255, 255, 255);
+  line-height: 0.8em;
+  margin: 0;
+  padding-top: 50px;
+  float: left;
+}
+header h1 span { font-size: 0.8em; }
+header nav {
+  padding-top: 60px;
+  float: right;
+}
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header nav li {
+  display: inline-block;
+  padding: 0 20px;
+  margin: 0;
+  border-left: rgb(224, 232, 239) 1px dotted;
+}
+header nav li:first-child { display: none; }
+header nav li:nth-child(2) { border-left: none; }
+header nav a {
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+}
+header nav a:hover, header nav a.active {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+div.grid > nav {
+  margin: 40px 30px 20px 30px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+main {
+  padding: 40px 0px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  min-width: 600px;
+  min-height: 680px;
+}
+aside {
+  margin: 40px 30px 20px 30px;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+footer {
+  background-color: rgb(0, 71, 120);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+footer p {
+  padding: 15px 0px;
+  margin: 0;
+  font-style: italic;
+}
+@media screen and (min-width: 1201px) {
+  div.wrapper, div.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  div.grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 260px auto;
+  }
+  header h1, header nav { float: none; }
+  header h1 { padding-top: 30px; }
+  header nav { padding-top: 30px; }
+  header nav li {
+    padding: 0 5px;
+    border-left: rgb(224, 232, 239) 1px dotted;
+  }
+  main { grid-column: 2/3; }
+  aside { 
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0px 0px 0px 0px;
+    
+  }
+}

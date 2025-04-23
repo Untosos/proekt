@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>О нас</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      section {
+        background-color: #eee ;
+        border: 1px solid #dddddd;
+        width: 600px;
+        height: 380px;
+        display: flex;
+      }
+      figure {
+        position: relative;
+        overflow: hidden;
+        flex: 1 1 1px;
+        transition: 0.3s flex;
+      }
+      figcaption {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        line-height: 50px;
+        text-align: center;
+        background-color: black;
+        opacity: 0;
+        color: #fff;
+        font-family: Verdana;
+        transition: 0.3s opacity;
+      }
+      figure:hover {
+        flex: 0 0 280px;
+      }
+      figure:hover figcaption {
+        opacity: 0.6;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Мошенничество в интернете<br><span>проект
+          </span></h1>
+        <nav>
+          <ul>
+            <li><a href="#">Навигация</a></li>
+            <li><a href="index.html" >Главная</a></li>
+            
+            <li><a href="save.html">Как себя обезопасить</a></li>
+            <li><a href="about.html" class="active">О нас</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="grid">
+      <main>
+        <p>
+          <b>Выполнили ученики 11Б класса:</b>
+          </p>
+        <section>
+          <figure>
+            <img src="img/ses-1.jpg" alt="Саша">
+            <figcaption>Чадов Александр</figcaption>
+          </figure>
+          <figure>
+            <img src="img/ses-2.jpg" alt="Тёма">
+            <figcaption>Будерецкий Артемий.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/ses-3.jpg" alt="Северин">
+            <figcaption>Владимиров Северин</figcaption>
+          </figure>
+        </section>	
+        <p><b>Куратор:</b> Конев Иван Александрович</p>
+      </main>
+    </div>
+    </div>
+    <footer>
+      <div class="wrapper">
+        <p>Государственное бюджетное образовательное учреждение
+          “Средняя общеобразовательная школа № 110”
+          города Санкт-Петербург 2022
+          </p>
+      </div>
+    </footer>
+  </body>
+</html>
